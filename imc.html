@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(peso, altura) {
+
+        return peso / (altura * altura);
+        return imc;
+    }
+
+    var imcMeu = calculaImc (60, 1.60);
+    var imcAmg = calculaImc(68, 1.72);
+    var totalImc = imcMeu + imcAmg;
+
+    mostra(imcMeu);
+    mostra(imcAmg);
+    mostra("A soma dos imcs é: " + totalImc);
+
+</script>
